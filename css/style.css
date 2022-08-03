@@ -188,6 +188,8 @@ body{
     border-right-width: 10px;
     border-right-style: solid;
 
+    position: relative;
+
     border-image: linear-gradient(to bottom, #C1EEFA
                                             #025AB6 48.34%
                                             #010006);
@@ -211,4 +213,31 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.combination{
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: 88px;
+    right: 64px;
+}
+
+.combination::after{
+    content: "";
+
+    width: 1px;
+    height: 86px;
+
+    background-color: var(--accent);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translate(21.5px, -21.5px);
 }
